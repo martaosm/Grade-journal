@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="background" prefHeight="442.0" prefWidth="603.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.project_gui.MainViewController">
+   <children>
+      <TableView fx:id="table" layoutX="36.0" layoutY="43.0" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="subjectsName" prefWidth="199.0" text="SUBJECTS" />
+        </columns>
+      </TableView>
+      <Label fx:id="label2" layoutX="285.0" layoutY="284.0" text="Grades:">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="label3" layoutX="255.0" layoutY="326.0" text="Average grade:">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="gradesDisplay" layoutX="444.0" layoutY="284.0" text="-">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="avgDisplay" layoutX="444.0" layoutY="326.0" text="-">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Button fx:id="showButton" layoutX="97.0" layoutY="292.0" mnemonicParsing="false" onAction="#showGrades" text="SHOW">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <TextField fx:id="addField" layoutX="310.0" layoutY="104.0">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <Button fx:id="addButton" layoutX="392.0" layoutY="167.0" mnemonicParsing="false" onAction="#add" text="ADD">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Label fx:id="label1" layoutX="347.0" layoutY="55.0" text="Adding new grade:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="exButton" layoutX="489.0" layoutY="397.0" mnemonicParsing="false" onAction="#exceptionWindow" text="Exceptions" />
+   </children>
+</AnchorPane>
